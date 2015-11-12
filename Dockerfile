@@ -67,6 +67,6 @@ RUN curl -LSO https://www.datatorrent.com/downloads/datatorrent-rts.bin
 
 EXPOSE 9090
 
-ENTRYPOINT ["/"]
+ENTRYPOINT ["sudo", "/"]
 
 CMD ["sudo", "sh", "./datatorrent-rts.bin", "-E", "JAVA_HOME=/usr/lib/jvm/java-7-oracle"]
