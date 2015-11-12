@@ -61,6 +61,8 @@ RUN mkdir -p $PIG_HOME &&\
 ENV PIG_HOME=/apps/pig/0.14.0
 ENV PATH=$PIG_HOME/bin:$PATH
 
+RUN sudo apt-get install -y curl
+
 RUN cd /tmp/
 RUN curl -LSO https \
   ://www.datatorrent.com/downloads/datatorrent-rts.bin
