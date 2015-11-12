@@ -64,8 +64,7 @@ ENV PATH=$PIG_HOME/bin:$PATH
 RUN sudo apt-get install -y curl
 
 RUN cd /tmp/
-RUN curl -LSO https \
-  ://www.datatorrent.com/downloads/datatorrent-rts.bin
+RUN curl -LSO https://www.datatorrent.com/downloads/datatorrent-rts.bin
 RUN sudo sh ./datatorrent-rts.bin -E JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
 EXPOSE 9090
