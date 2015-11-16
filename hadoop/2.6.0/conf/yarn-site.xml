@@ -6,6 +6,6 @@
 
     <property>
         <name>yarn.resourcemanager.hostname</name>
-        <value>hadoop-genie</value>
+        <value>localhost</value>
     </property>
 </configuration>
